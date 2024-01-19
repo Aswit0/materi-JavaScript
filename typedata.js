@@ -33,7 +33,7 @@ console.log("BigInt Variable:", bigIntVariable);
 console.log("Null Variable:", nullVariable);
 console.log("Undefined Variable:", undefinedVariable);
 console.log("Boolean Variable:", booleanVariable);
-console.log("Object Variable:", objectVariable);
+console.log("Object Variable:", objectVariable.key1);
 console.log("Array Variable:", arrayVariable);
 
 
