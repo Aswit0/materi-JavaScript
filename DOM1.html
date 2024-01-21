@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple DOM Example</title>
+</head>
+
+<body>
+
+    <p id="myParagraph">Ini adalah paragraf dengan ID.</p>
+
+    <p class="myClass">Ini adalah paragraf dengan class.</p>
+
+    <script>
+        // script.js
+
+        // Get Element by ID
+        let paragraphById = document.getElementById('myParagraph');
+        console.log(paragraphById.textContent); // Output: Ini adalah paragraf dengan ID.
+
+        // Get the first Element by Class
+        let firstParagraphByClass = document.querySelector('.myClass');
+        console.log(firstParagraphByClass.textContent); // Output: Ini adalah paragraf dengan class.
+
+    </script>
+</body>
+
+</html>
