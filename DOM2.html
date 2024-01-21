@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Example</title>
+    <style>
+        /* Styling untuk memberikan efek hover */
+        p:hover {
+            cursor: pointer;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript DOM Example</h1>
+
+    <!-- Tombol untuk menambahkan elemen -->
+    <button onclick="addElement()">Tambah Elemen</button>
+
+    <!-- Tombol untuk menghapus elemen -->
+    <button onclick="removeElement()">Hapus Elemen</button>
+
+    <!-- Container untuk menambahkan elemen -->
+    <div id="elementContainer"></div>
+
+    <script>
+        // Fungsi untuk menambahkan elemen
+        function addElement() {
+            var newElement = document.createElement("p");
+            newElement.textContent = "Elemen baru telah ditambahkan!";
+            newElement.style.color = "green";
+
+            // Menambahkan elemen baru ke dalam container
+            var elementContainer = document.getElementById("elementContainer");
+            elementContainer.appendChild(newElement);
+
+            // Menambahkan event klik pada elemen baru
+            newElement.addEventListener("click", function() {
+                alert("Elemen baru diklik!");
+            });
+        }
+
+        // Fungsi untuk menghapus elemen yang ditambahkan
+        function removeElement() {
+            var elementContainer = document.getElementById("elementContainer");
+            
+            // Mengambil elemen terakhir dalam container
+            var lastElement = elementContainer.lastChild;
+
+            // Menghapus elemen terakhir jika ada
+            if (lastElement) {
+                elementContainer.removeChild(lastElement);
+            }
+        }
+    </script>
+
+</body>
+</html>
