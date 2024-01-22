@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <h1>JavaScript DOM Example</h1>
@@ -37,7 +39,7 @@
             elementContainer.appendChild(newElement);
 
             // Menambahkan event klik pada elemen baru
-            newElement.addEventListener("click", function() {
+            newElement.addEventListener("click", function () {
                 alert("Elemen baru diklik!");
             });
         }
@@ -45,7 +47,7 @@
         // Fungsi untuk menghapus elemen yang ditambahkan
         function removeElement() {
             var elementContainer = document.getElementById("elementContainer");
-            
+
             // Mengambil elemen terakhir dalam container
             var lastElement = elementContainer.lastChild;
 
@@ -57,4 +59,5 @@
     </script>
 
 </body>
+
 </html>
